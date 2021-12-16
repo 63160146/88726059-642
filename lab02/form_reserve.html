@@ -6,32 +6,50 @@
  <title>Form demo</title>
 </head>
 <body>
- <h3>Form Demo</h3>
+ <h3>Form Reserve</h3>
  <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
- <label for="name">Room Type:</label><br>
- <input type="text" name="name" id="name">
- <br><br>
- <label for="passwd">Number of Guests:</label><br>
- <input type="text" name="name" id="name">
- <br><br>
- <label for="sex">เพศ:</label><br>
- <input type="radio" name="sex" id="sex" value="M">ชาย
- <input type="radio" name="sex" id="sex" value="F">หญิง
- <br><br>
- <label for="choice">งานอดิเรก:</label><br>
- <input type="checkbox" name="choice1" id="choice1" value="1">ดูหนัง
- <input type="checkbox" name="choice2" id="choice2" value="2">ฟังเพลง
- <input type="checkbox" name="choice3" id="choice3" value="3">เล่นเกม
- <br><br>
- <label for="emotion">ความรู้สึกตอนนี้:</label><br>
+ <label for="name">Room Type:</label>
  <select name="emotion">
  <option value="0">--Select one--</option>
- <option value="1">Happy</option>
- <option value="2">Sad</option>
- <option value="3">Fun</option>
+ <option value="1">Standard</option>
+ <option value="2">Luxury</option>
+ <option value="3">Deluxe</option>
  </select>
  <br><br>
- ข้อเสนอแนะ:<br>
+ <label for="passwd">Number of Guests:</label><br>
+ <select name="emotion">
+    <option value="0">--Select one--</option>
+    <option value="1">1-2</option>
+    <option value="2">3-4</option>
+    <option value="3">5-6</option>
+    <option value="3">7-8</option>
+    </select>
+ <br><br>
+ <table>
+ <label for="name">Name: </label>
+ <input type="text" name="name" id="name">&nbsp;&nbsp;  <label for="lastname">Last-Name: </label> <input type="text" name="lastname" id="lastname">
+</table>
+ <br><br>
+<label for="arrival">Arrival:</label> &nbsp;&nbsp;  
+<form action="action_page.php">
+     <input type="date" name="bday" max="2200-01-01">
+     <input type ="time" name="usr_time"></form>
+     <br><br> 
+<label for="departure">Departure:</label> 
+    <input type="date" name="bday" max="2200-01-01">
+    <input type ="time" name="usr_time"></form>
+    <br><br>        
+ <label for="name">Email:</label>
+ <input type="text" name="email" id="email">
+ <br><br>
+ <label for="sex">Free Pickup:</label><br>
+ <input type="radio" name="Pickup" id="Pickup" value="M">Yes,Sure
+ <input type="radio" name="Pickup" id="Pickup" value="F">No,I already rented a car
+ <br><br>
+ <label for="name">Fligth Number:</label>
+ <input type="text" name="flightnum" id="fligthnum">
+ <br><br>
+ Other requests
  <Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea>
  <br><br>
  <input type="submit" value="Send">
