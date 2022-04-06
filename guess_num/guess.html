@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Guess Number</title>
+</head>
+<body>
+	<h4>Guess Number</h4>
+	<input type="text" id="num">
+	<input type="button" value="Guess" onclick="guess()">
+	<div id='result'></div>
+	<script>
+		rnd = Math.floor(Math.random()*100);
+		document.getElementById('num').focus();
+		function guess(){
+			n = document.getElementById('num').value;
+			result = document.getElementById('result');
+			if(n<rnd) result.innerHTML = "<p> น้อยไป </p>"
+			if(n>rnd) result.innerHTML = "<p> มากไป </p>"
+			if(n==rnd) result.innerHTML = "<p> \You Win/ </p>"
+			document.getElementById('num').select();
+		}
+	</script>
+</body>
+</html>
+
